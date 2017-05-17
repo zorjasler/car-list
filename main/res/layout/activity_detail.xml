@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_detail">
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/car_thumb_big"
+        android:adjustViewBounds="true"
+        app:siRadius="@dimen/thumbnail_radius"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <include layout="@layout/progress_bar"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/car_thumb_big">
+
+        <LinearLayout
+            style="@style/LayoutDimensions"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <TextView
+                    style="@style/TitleTextView"
+                    android:text="@string/title_brand"
+                    android:id="@+id/title_brand" />
+
+                <TextView
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_brand" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <TextView
+                    style="@style/TitleTextView"
+                    android:text="@string/title_model"
+                    android:id="@+id/title_model" />
+
+                <TextView
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_model" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <TextView
+                    style="@style/TitleTextView"
+                    android:text="@string/title_weight"
+                    android:id="@+id/title_weight" />
+
+                <TextView
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_weight" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <TextView
+                    style="@style/TitleTextView"
+                    android:text="@string/title_year"
+                    android:id="@+id/title_year" />
+
+                <TextView
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_year" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <TextView
+                    style="@style/TitleTextView"
+                    android:text="@string/title_power"
+                    android:id="@+id/title_power" />
+
+                <TextView
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_power" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <TextView
+                    style="@style/TitleTextView"
+                    android:text="@string/title_torque"
+                    android:id="@+id/title_torque" />
+
+                <TextView
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_torque"
+                    android:ellipsize="end" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <TextView
+                    style="@style/TitleTextView"
+                    android:text="@string/title_price"
+                    android:id="@+id/title_price" />
+
+                <TextView
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_price"
+                    android:ellipsize="end" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

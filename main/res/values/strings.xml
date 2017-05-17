@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestApp</string>
+
+    <string name="title_brand">Brand: </string>
+    <string name="title_model">Model: </string>
+    <string name="title_weight">Weight: </string>
+    <string name="title_year">Year: </string>
+    <string name="title_power">Power: </string>
+    <string name="title_torque">Torque: </string>
+    <string name="title_price">Price: </string>
+
+    <string name="error_parsing_data">Data cannot be parsed; check your model</string>
+    <string name="error_fetching_data">An error has occurred fetching data</string>
+    <string name="error_null_object">The object passed is null</string>
+</resources>
